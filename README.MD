@@ -42,6 +42,8 @@ $ go run cmd/main.go
 | Penjumlahan yang Dibatalkan | `cancelled_sum.go`       |
 | Berhitung Dengan Jari       | `fingers_count.go`       |
 | Lampu yang Hidup Mati       | `lamp_status.go`         |
+| Adakah yang Lebih Besar     | `find_bigger.go`         |
+| Permadani Terbang           | `flying_rugs.go`         |
 
 ## License
 

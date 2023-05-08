@@ -7,8 +7,9 @@ import (
 
 func main() {
 	// Call Service (Solution) Here
-	// Example answer := service.FunctionName(func params...)
+	// Example 		=> s := service.FunctionName(func params...)
+	// Print Output => fmt.Println(s)
 
-	s := service.LampStatus(10, 4)
+	s := service.FlyingRugs("100 90 30 2 85 80 200 33 54")
 	fmt.Println(s)
 }
