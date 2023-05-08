@@ -7,7 +7,7 @@ Welcome to Kodenesia - 71 Basic Algorithm Problems answers repository! This is a
 Clone the project
 
 ```bash
-$ git clone https://link-to-project
+$ git clone https://github.com/Assyatier21/kodenesia-answer
 ```
 
 Go to the project directory
