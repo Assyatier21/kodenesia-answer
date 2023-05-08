@@ -9,6 +9,6 @@ func main() {
 	// Call Service (Solution) Here
 	// Example answer := service.FunctionName(func params...)
 
-	s := service.FingersCount(1, 10)
+	s := service.LampStatus(10, 4)
 	fmt.Println(s)
 }

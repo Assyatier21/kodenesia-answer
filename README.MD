@@ -41,6 +41,7 @@ $ go run cmd/main.go
 | Hilang Dalam Keramaian      | `missing_number.go`      |
 | Penjumlahan yang Dibatalkan | `cancelled_sum.go`       |
 | Berhitung Dengan Jari       | `fingers_count.go`       |
+| Lampu yang Hidup Mati       | `lamp_status.go`         |
 
 ## License
 
