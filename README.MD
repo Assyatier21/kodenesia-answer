@@ -30,7 +30,9 @@ To run the program, kindly follow the command below.
 $ go run cmd/main.go
 ```
 
-- Note: All of the answers are in the `services` folder, so we need to define which function we need in `cmd/main.go` as well.## List of Algorithm Answers for Questions
+- Note: All of the answers are in the `services` folder, so we need to define which function we need in `cmd/main.go` as well.
+
+## List of Algorithm Answers for Questions
 
 | Questions                   | Answers                  |
 | :-------------------------- | :----------------------- |
@@ -48,4 +50,4 @@ $ go run cmd/main.go
 ## License
 
 License
-This project is licensed under the MIT License - see the [LICENSE](https://choosealicense.com/licenses/mit/) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Assyatier21/kodenesia-answer/blob/master/LICENSE) file for details.
