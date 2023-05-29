@@ -1,44 +1,33 @@
 package service
 
-import "reflect"
-
 func FindBrackets(s string) string {
-	var (
-		bracketOne   = []bool{}
-		bracketTwo   = []bool{}
-		bracketThree = []bool{}
-	)
-
-	if len(s) < 1 || len(s) > 1000 {
-		return "TIDAK"
+	stack := make([]rune, 0)
+	mapping := map[rune]rune{
+		')': '(',
+		'}': '{',
+		']': '[',
 	}
 
 	for _, char := range s {
-		switch char {
-		case '{':
-			bracketOne = append(bracketOne, true)
-		case '}':
-			bracketOne = append(bracketOne, true)
-		case '[':
-			bracketTwo = append(bracketTwo, true)
-		case ']':
-			bracketTwo = append(bracketTwo, true)
-		case '(':
-			bracketThree = append(bracketThree, true)
-		case ')':
-			bracketThree = append(bracketThree, true)
+		if char == '(' || char == '{' || char == '[' {
+			stack = append(stack, char)
+		} else if char == ')' || char == '}' || char == ']' {
+			if len(stack) == 0 {
+				return "TIDAK"
+			}
+
+			top := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+
+			if mapping[char] != top {
+				return "TIDAK"
+			}
 		}
 	}
 
-	checker := map[string][]bool{
-		"{}": bracketOne,
-		"[]": bracketTwo,
-		"()": bracketThree,
-	}
-
-	if reflect.DeepEqual(checker["{}"], []bool{true, true}) || reflect.DeepEqual(checker["[]"], []bool{true, true}) || reflect.DeepEqual(checker["()"], []bool{true, true}) {
+	if len(stack) == 0 {
 		return "YA"
+	} else {
+		return "TIDAK"
 	}
-
-	return "TIDAK"
 }
